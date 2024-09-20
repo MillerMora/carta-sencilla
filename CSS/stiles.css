@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230728/pngtree-a-field-full-of-yellow-flowers-image_10183583.jpg'); /* Imagen de campo */
+    background-image: url('../Assets/campo\ flores\ amarillas.jpg'); 
     background-size: cover;
     background-position: center;
 }
