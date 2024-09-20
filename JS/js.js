@@ -2,7 +2,7 @@
 function abrirCarta() {
   console.log("Carta abierta");
   const cartaImagen = document.getElementById("imagen-carta");
-  cartaImagen.src = "Carta abierta.png"; // Cambia la ruta según sea necesario
+  cartaImagen.src = "Assets/Carta abierta.png";
   document.getElementById("papel").style.display = "block";
   document.getElementById("overlay").style.display = "block";
   cartaImagen.classList.add("abierta");
