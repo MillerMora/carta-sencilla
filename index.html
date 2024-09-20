@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stiles.css">
+    <link rel="stylesheet" href="CSS/dispositivos.css">
+    <script src="JS/js.js"></script>
+    <title>Flores amarillas</title>
+</head>
+<body>
+    <body>
+    <!-- Fondo oscuro que aparece al abrir la carta -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Carta en el centro -->
+    <div class="carta" id="carta" onclick="abrirCarta()">
+        <img src="Carta cerrada.png" alt="Carta Cerrada" id="imagen-carta" class="carta-imagen">
+    </div>
+
+
+    <!-- Contenido que aparece sobre la página (papel de cuaderno) -->
+    <div class="papel" id="papel">
+        <img src="Carta.png" alt="Papel de cuaderno" class="papel-imagen">
+        <button class="cerrar" id="cerrar" onclick="cerrarPapel()">X</button>
+    </div>
+
+    <img src="Flor amarilla.png" alt="Flor" class="flor izquierda" onclick="redireccionarCancion()">
+    <img src="Flor amarilla.png" alt="Flor" class="flor derecha"onclick="redireccionarCancion()">
+    <img src="Flor amarilla2.png" alt="Flor" class="flor inferior-izquierda" onclick="redireccionarCancion()">
+    <img src="Flor amarilla2.png" alt="Flor" class="flor inferior-derecha" onclick="redireccionarCancion()">
+    </body>
+</body>
+</html>

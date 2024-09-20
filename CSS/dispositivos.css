@@ -1,0 +1,25 @@
+/* Estilos base para móviles */
+@media only screen and (max-width: 768px) {
+    .papel-imagen {
+        width: 100vw;  /* Papel ocupa todo el ancho */
+    }
+
+    .cerrar {
+        font-size: 18px;
+    }
+
+    .carta-imagen {
+        width: 250px; /* Ajustamos el tamaño de la carta en móviles */
+    }
+}
+
+/* Para pantallas más pequeñas (teléfonos) */
+@media only screen and (max-width: 480px) {
+    .papel-imagen {
+        width: 95vw;
+    }
+
+    .cerrar {
+        font-size: 16px;
+    }
+}

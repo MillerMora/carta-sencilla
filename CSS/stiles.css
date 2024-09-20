@@ -1,0 +1,108 @@
+/* Estilo para el fondo del campo */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230728/pngtree-a-field-full-of-yellow-flowers-image_10183583.jpg'); /* Imagen de campo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Carta cerrada */
+.carta {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+/* Ocultar el papel de cuaderno por defecto */
+.papel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1001;
+}
+
+.papel-imagen {
+    width: 90vw;  /* Se ajusta al 90% del ancho de la ventana */
+    max-width: 600px; /* Máximo tamaño para pantallas grandes */
+}
+
+/* Botón cerrar */
+.cerrar {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Fondo oscuro (overlay) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;  /* Está oculto por defecto */
+}
+
+/* Imagen de la carta */
+.carta-imagen {
+    width: 300px; /* Tamaño de la carta */
+    transition: transform 0.3s;
+}
+
+.carta-imagen.abierta {
+    transform: scale(1.1); /* Efecto al hacer clic */
+}
+
+.flor {
+    position: absolute;
+    z-index: 1000;
+    max-width: 150px;
+    transition: all 0.3s ease;
+}
+
+/* Flores en diferentes posiciones */
+.flor.izquierda {
+    top: 5%;
+    left: 0;
+}
+
+.flor.derecha {
+    top: 5%;
+    right: 0;
+}
+
+.flor.inferior-izquierda {
+    bottom: 0;
+    left: 0;
+}
+
+.flor.inferior-derecha {
+    bottom: 0;
+    right: 0;
+}
+
+/* Adaptamos las imágenes para dispositivos más pequeños */
+@media only screen and (max-width: 768px) {
+    .flor {
+        max-width: 80px; /* Hacemos las flores un poco más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .flor {
+        max-width: 60px; /* Aún más pequeñas en pantallas muy pequeñas */
+    }
+}
