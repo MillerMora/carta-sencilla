@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../Assets/campo\ flores\ amarillas.jpg'); 
+    background-image: url('../Assets/Campo.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -35,7 +35,7 @@ body {
 /* Botón cerrar */
 .cerrar {
     position: absolute;
-    top: 100px;
+    top: 20px;
     right: 20px;
     background-color: red;
     color: white;
